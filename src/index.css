@@ -1,0 +1,78 @@
+:root {
+  --ink: #20342c;
+  --muted: #6a7b72;
+  --paper: #f3f6f3;
+  --surface: #ffffff;
+  --line: #dce5df;
+  --brand: #17634f;
+  --brand-deep: #103f34;
+  --brand-soft: #e8f0eb;
+  --accent: #df7652;
+  --danger: #b44a3e;
+  --shadow: 0 16px 44px rgba(26, 55, 43, 0.08);
+  --sans: "Trebuchet MS", "Segoe UI", sans-serif;
+  --heading: Georgia, "Times New Roman", serif;
+
+  font: 16px/1.5 var(--sans);
+  letter-spacing: 0;
+  color-scheme: light;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+a {
+  color: var(--brand);
+  text-underline-offset: 3px;
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible {
+  outline: 3px solid rgba(223, 118, 82, 0.45);
+  outline-offset: 3px;
+}
